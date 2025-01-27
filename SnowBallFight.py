@@ -307,7 +307,7 @@ class Player:
 
         if free_fall:
             # Schwerkraft
-            self.movement_vector[1] -= 2 * gravity_constant * delta_t**2
+            self.movement_vector[1] -= gravity_constant * delta_t
 
     def respawn(self):
         if (self.xyz[1] < -300) or (self.health == 0):
